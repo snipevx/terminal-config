@@ -1,0 +1,58 @@
+== Working with tmux ==
+
+== Prefix ==
+ 
+c-a   :: prefix key (all binds below are pressed after this, unless marked "no prefix")
+c-a a :: send a literal ctrl-a to the terminal
+ 
+ 
+== Windows ==
+ 
+c-a c   :: new window (opens in current pane's directory)
+c-a n   :: next window
+c-a p   :: previous window
+c-a 0-9 :: jump to window by number
+c-a ,   :: rename window
+c-a &   :: kill window
+c-a w   :: list windows, choose one
+S-Right   :: next window (no prefix)
+S-Left    :: previous window (no prefix)
+c-S-Right :: swap current window with the one to its right (no prefix)
+c-S-Left  :: swap current window with the one to its left (no prefix)
+ 
+ 
+== Panes / Splits ==
+ 
+c-a |        :: split pane horizontally (same pwd)
+c-a -        :: split pane vertically (same pwd)
+c-a o        :: cycle to next pane
+c-a x        :: kill current pane
+c-a z        :: zoom/unzoom current pane
+M-Left       :: move to pane on the left (no prefix)
+M-Right      :: move to pane on the right (no prefix)
+M-Up         :: move to pane above (no prefix)
+M-Down       :: move to pane below (no prefix)
+ 
+ 
+== Copy Mode (vi keys) ==
+ 
+c-a [        :: enter copy mode
+v            :: start selection (vi-style)
+y            :: yank selection to tmux's own paste buffer
+Enter        :: copy selection to system clipboard (xclip) and exit
+mouse drag   :: copy selection to system clipboard (xclip) on release
+c-a ]        :: paste from tmux's paste buffer
+c-wheel-up   :: enter copy mode, scroll half-page up
+c-wheel-down :: scroll half-page down (while in copy mode)
+ 
+ 
+== Mouse ==
+ 
+mouse :: enabled globally — click to select pane, drag border to resize,
+         wheel to scroll / enter copy mode automatically (uses xclip)
+ 
+ 
+== Reload / Misc ==
+ 
+c-a r :: reload ~/.tmux.conf
+c-a t :: show clock (green)
