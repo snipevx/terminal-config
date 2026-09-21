@@ -18,9 +18,14 @@ done
 echo
 
 cp snipesec_tmux.conf ~/.tmux.conf
+cp vimrc ~/.vimrc
 mkdir -p ~/Scripts
 cp vpnIP_VM.sh ~/Scripts/vpnIP_VM.sh
 cp localip.sh ~/Scripts/localip.sh
+cp vim_help.txt ~/Scripts/vim_help.txt
+cp tmux_help.txt ~/Scripts/tmux_help.txt
+cp alias.txt ~/Scripts/alias.txt
+cp bash_functions.txt ~/Scripts/bash_functions.txt
 chmod +x ~/Scripts/vpnIP_VM.sh
 chmod +x ~/Scripts/localip.sh
 
