@@ -1,10 +1,5 @@
 export PATH="/home/kali/.local/bin:$PATH"
 
-alias thmup="sudo openvpn /home/kali/Documents/vpn-config/snipesec.ovpn"
-alias htbup="sudo openvpn /home/kali/Documents/vpn-config/lab_0xSN1PE.ovpn"
-alias bloodhound="docker compose -f /home/kali/.config/bloodhound/docker-compose.yml up -d"
-alias bloodhound-stop="docker compose -f /home/kali/.config/bloodhound/docker-compose.yml stop"
-alias bloodhound-python="bloodhound-ce-python"
 
 eval "$(zoxide init zsh)"
 alias cd="z"
@@ -28,15 +23,6 @@ export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | 
 
 # opens documentation through fzf (eg: git,zsh etc.)
 alias fman='print -l ${(k)commands} | fzf | xargs man'
-
-# Batcat (Better cat)
-alias bcat="batcat"
-
-# eza (better ls)
-
-alias ls="eza --color=always --icons=always"
-alias ll="eza --long --color=always --icons=always"
-alias la="eza --long --all --color=always --icons=always"
 
 ## zoxide (smarter cd)
 eval "$(zoxide init zsh)"
@@ -63,3 +49,13 @@ tmux-session-switch() {
 
 # Ensure keybinding works
 bindkey -s '^F' 'tmux-session-switch\n'
+
+# sourcing aliases
+if [ -f ~/tools/binz/aliaz.txt ]; then
+   . ~/tools/binz/aliaz.txt
+fi
+
+# sourcing functions
+if [ -f ~/tools/binz/bash_funcz.txt ]; then
+    . ~/tools/binz/bash_funcz.txt
+fi
