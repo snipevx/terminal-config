@@ -51,11 +51,11 @@ tmux-session-switch() {
 bindkey -s '^F' 'tmux-session-switch\n'
 
 # sourcing aliases
-if [ -f ~/tools/binz/aliaz.txt ]; then
-   . ~/tools/binz/aliaz.txt
+if [ -f ~/Scripts/alias.txt ]; then
+   . ~/Scripts/alias.txt
 fi
 
 # sourcing functions
-if [ -f ~/tools/binz/bash_funcz.txt ]; then
-    . ~/tools/binz/bash_funcz.txt
+if [ -f ~/Scripts/bash_functions.txt ]; then
+    . ~/Scripts/bash_functions.txt
 fi
