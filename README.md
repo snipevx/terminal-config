@@ -3,7 +3,7 @@
 1. All the alias are located in ~/Sripts/alias.txt after running the install script.
 2. Supports mouse functions. i.e. Mouse clicks can be used to switch splits, windows, sessions etc. Scrolling with mouse wheel activates copy mode and you can select using mouse cursor.
 
-Note - Make sure to add the zsh-config contents to the bottom of your .zshrc file for loading all the custom configs.
+> **Note** - Make sure to add the zsh-config contents to the bottom of your .zshrc file for loading all the custom configs.
 
 ## Install and Setup Alacritty with Themes and other Essentials
 
