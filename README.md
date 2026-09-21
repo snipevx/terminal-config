@@ -5,14 +5,17 @@
 
 Note - Make sure to add the zsh-config contents to the bottom of your .zshrc file for loading all the custom configs.
 
-## Install and Setup Alacritty with Themes
+## Install and Setup Alacritty with Themes and other Essentials
 
 I am using ayu_dark for my setup
 
 ```
+sudo apt install zoxide fzf fd-find eza bat -y
+pip install tldr && tldr --update
+
 sudo apt install alacritty
 
-# Installing themes
+# Installing Alacritty themes
 mkdir -p ~/.config/alacritty/themes
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 
