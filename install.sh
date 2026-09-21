@@ -18,6 +18,7 @@ done
 echo
 
 cp snipesec_tmux.conf ~/.tmux.conf
+cp alacritty.toml ~/.config/alacritty/alacritty.toml
 cp vimrc ~/.vimrc
 mkdir -p ~/Scripts
 cp vpnIP_VM.sh ~/Scripts/vpnIP_VM.sh
