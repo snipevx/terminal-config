@@ -34,18 +34,7 @@ echo
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "Press Prefix+I inside tmux to install the plugins"
 
-icons_install="[+] Installing icons in terminal..."
-for ((i=0; i<${#icons_install}; i++)); do
-    echo -n "${icons_install:$i:1}"
-    sleep 0.05
-done
-echo
-
-cd ~/ ; git clone https://github.com/sebastiencs/icons-in-terminal.git
-cd icons-in-terminal;chmod +x install.sh
-./install.sh
-
-setup_done="[-] D0ne!"
+setup_done="[-] Done!"
 for ((i=0; i<${#setup_done}; i++)); do
     echo -n "${setup_done:$i:1}"
     sleep 0.05
