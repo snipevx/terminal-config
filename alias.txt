@@ -1,5 +1,5 @@
-alias vim-help='vim ~/helpz/vim-help.txt'
-alias tmux-help='vim ~/helpz/tmux-help.txt'
+alias vim-help='vim ~/Scripts/vim-help.txt'
+alias tmux-help='vim ~/Scripts/tmux-help.txt'
 alias sl=ls
 alias copy='xclip -selection clipboard -i $@'
 alias myip='echo "Public Ip : $(dig +short txt ch whoami.cloudflare @1.0.0.1 | cut -d \" -f 2)"'
