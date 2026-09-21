@@ -1,0 +1,10 @@
+[general]
+import = [
+  "/home/kali/.config/alacritty/themes/themes/ayu_dark.toml"
+]
+
+[cursor]
+style = "Beam"
+
+[window]
+padding = { x = 5, y = 5 }
